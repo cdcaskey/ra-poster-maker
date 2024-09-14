@@ -13,10 +13,14 @@ $('.posterInput').on('input', function() {
     updateStyle(selectedStyle);
 });
 
+$('.posterInput').on('textarea', function() {
+    updateStyle(selectedStyle);
+});
+
 $(function () {
     $('.selected').removeClass('selected')
     $('.styleImage[value=3]').addClass('selected');
 
     selectedStyle = 3;
-    updateStyle(3);
+    updateStyle(selectedStyle);
 })

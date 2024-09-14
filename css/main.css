@@ -1,17 +1,6 @@
-div {
-    width: calc(100% - 6em);
-    background: #eee;
-    border-radius: 2em;
-    padding: 2em;
-    margin: 1em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: Fira Sans, Arial, sans-serif;
-}
-
-#styles > td {
-    width: 25%;
+input:focus:not([readonly]) {
+    border-bottom: 1px solid #0d47a1 !important;
+    box-shadow: 0 1px 0 0 #0d47a1 !important;
 }
 
 .styleImage {
@@ -20,56 +9,6 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 25%;
 }
 
-#styles .selected {
+.styleImage.selected {
     opacity: 100%;
-}
-
-
-
-#inputs {
-    padding-top: 0.1em;
-}
-
-
-#poster {
-    text-align: center;
-}
-
-td {
-    padding: 0.1em 0.5em;
-}
-
-#inputs td:first-child {
-    white-space: nowrap;
-}
-
-#inputs td:last-child {
-    width: 100%;
-}
-
-#inputs td:last-child > * {
-    width: 100%;
-}
-
-.inputName, .posterInput {
-    font: 1.5em Arial, sans-serif;
-}
-
-.inputName {
-    text-align: right;
-}
-
-.requiredNote {
-    padding-top: 1em;
-    font: 1.5em Arial, sans-serif;
-}
-
-canvas {
-    border: 2px solid black;
-    max-width: 100%;
-}
-
-.required::after {
-    content: "*";
-    color: red;
 }
