@@ -1,11 +1,81 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Hello World!</title>
+        <title>RA Poster Maker</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
-        <code>> git add .</code>
-        <br />
-        <code>> git commit -m "Initial Commit"</code>
+        <div id="styles">
+            <h1>Select a Style</h1>
+            <table>
+                <tr>
+                    <td><img value="1" class="styleImage" src="img/Style1.png" alt="Style 1" /></td>
+                    <td><img value="2" class="styleImage" src="img/Style2.png" alt="Style 2" /></td>
+                    <td><img value="3" class="styleImage" src="img/Style3.png" alt="Style 3" /></td>
+                    <td><img value="4" class="styleImage" src="img/Style4.png" alt="Style 4" /></td>
+                </tr>
+            </table>
+        </div>
+        <div id="inputs">
+            <h1>Create your own meeting poster</h1>
+            <table>
+                <tr>
+                    <td class="inputName required"><span>Name Line 1</span></td>
+                    <td class="inputValue"><input id="nameTop" class="posterInput" value="Your Friendly" /></td>
+                </tr>
+                <tr>
+                    <td class="inputName required"><span>Name Line 2</span></td>
+                    <td class="inputValue"><input id="nameBottom" class="posterInput" value="Referees' Association" /></td>
+                </tr>
+                <tr>
+                    <td class="inputName required"><span>Title</span></td>
+                    <td class="inputValue"><input id="title" class="posterInput" value="Monthly Meeting" /></td>
+                </tr>
+                <tr>
+                    <td class="inputName">Subtitle</td>
+                    <td class="inputValue"><input id="subtitle" class="posterInput" value="With Special Guest: " /></td>
+                </tr>
+                <tr>
+                    <td class="inputName">Event</td>
+                    <td class="inputValue"><input id="event" class="posterInput" value="Steve Andrews" /></td>
+                </tr>
+                <tr>
+                    <td class="inputName">Event Tagline</td>
+                    <td class="inputValue"><input id="eventTagline" class="posterInput" value="Former Premier League Referee, FA Tutor & Mentor" /></td>
+                </tr>
+                <tr>
+                    <td class="inputName">Date</td>
+                    <td class="inputValue"><input id="date" class="posterInput" value="28/12/22" /></td>
+                </tr>
+                <tr>
+                    <td class="inputName">Time</td>
+                    <td class="inputValue"><input id="time" class="posterInput" value="7:30pm" /></td>
+                </tr>
+                <tr>
+                    <td class="inputName">Location</td>
+                    <td class="inputValue"><input id="location" class="posterInput" value="Meeting Hall" /></td>
+                </tr>
+                <tr>
+                    <td class="inputName">Address</td>
+                    <td class="inputValue"><textarea id="address" class="posterInput" type="text" onChange="updatePoster()">123 Fake Street
+HU1 1AD</textarea></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td class="requiredNote"><span class="required">&nbsp;</span> = If a value isn't entered in these boxes, the poster might not look right.</td>
+                </tr>
+            </table>
+        </div>      
+
+        <div id="poster">
+            <canvas width="1080px" height="1080px" id="canvas">Your browser does not support the canvas tag.</canvas>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/baseCanvas.js"></script>
+        <script type="text/javascript" src="js/style3.js"></script>
+        <script type="text/javascript" src="js/styles.js"></script>
     </body>
 </html>
