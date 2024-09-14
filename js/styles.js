@@ -1,7 +1,7 @@
 var selectedStyle = 0;
 
 // Disabled while only one style available
-// $('.styleImage').click(function () {
+// $('.style-image').click(function () {
 //     $('.selected').removeClass('selected')
 //     $(this).addClass('selected');
 //     selectedStyle = parseInt($(this).attr('value'));
@@ -9,17 +9,17 @@ var selectedStyle = 0;
 //     updateStyle(selectedStyle);
 // });
 
-$('.posterInput').on('input', function() {
+$('.poster-input').on('input', function() {
     updateStyle(selectedStyle);
 });
 
-$('.posterInput').on('textarea', function() {
+$('.poster-input').on('textarea', function() {
     updateStyle(selectedStyle);
 });
 
 $(function () {
     $('.selected').removeClass('selected')
-    $('.styleImage[value=3]').addClass('selected');
+    $('.style-image[value=3]').addClass('selected');
 
     selectedStyle = 3;
     updateStyle(selectedStyle);

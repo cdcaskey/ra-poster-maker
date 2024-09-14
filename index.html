@@ -1,6 +1,8 @@
 <html>
 <head>
     <title>RA Poster Maker</title>
+    <!-- fixes a bug in firefox, see: https://stackoverflow.com/questions/21147149/flash-of-unstyled-content-fouc-in-firefox-only-is-ff-slow-renderer -->
+    <script>0</script>
     
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,10 +27,10 @@
         <div class="section">
             <h3>Select a Style</h3>
             <div class="row">
-                <div class="col m3 s6"><div class="card hoverable"><img value="1" class="styleImage responsive-img" src="img/Style1.png" alt="Style 1" /></div></div>
-                <div class="col m3 s6"><div class="card hoverable"><img value="2" class="styleImage responsive-img" src="img/Style2.png" alt="Style 2" /></div></div>
-                <div class="col m3 s6"><div class="card hoverable"><img value="3" class="styleImage responsive-img selected" src="img/Style3.png" alt="Style 3" /></div></div>
-                <div class="col m3 s6"><div class="card hoverable"><img value="4" class="styleImage responsive-img" src="img/Style4.png" alt="Style 4" /></div></div>
+                <div class="col m3 s6"><div class="card hoverable"><img value="1" class="style-image responsive-img" src="img/Style1.png" alt="Style 1" /></div></div>
+                <div class="col m3 s6"><div class="card hoverable"><img value="2" class="style-image responsive-img" src="img/Style2.png" alt="Style 2" /></div></div>
+                <div class="col m3 s6"><div class="card hoverable"><img value="3" class="style-image responsive-img selected" src="img/Style3.png" alt="Style 3" /></div></div>
+                <div class="col m3 s6"><div class="card hoverable"><img value="4" class="style-image responsive-img" src="img/Style4.png" alt="Style 4" /></div></div>
             </div>
         </div>
     
@@ -36,44 +38,44 @@
             <h3>Add Information</h3>
             <div class="row">
                 <div class="input-field col s12 m6">
-                    <label for="nameTop">Name Line 1</label>
-                    <input value="Your" id="nameTop" class="posterInput" type="text" />
+                    <label for="name-top">Name Line 1</label>
+                    <input value="Your" id="name-top" class="poster-input" type="text" />
                 </div>
                 <div class="input-field col s12 m6">
-                    <label for="nameBottom">Name Line 2</label>
-                    <input value="Referees' Association" id="nameBottom" class="posterInput" type="text" />
+                    <label for="name-bottom">Name Line 2</label>
+                    <input value="Referees' Association" id="name-bottom" class="poster-input" type="text" />
                 </div>
                 <div class="input-field col s12 m6">
                     <label for="title">Title</label>
-                    <input value="Monthly Meeting" id="title" class="posterInput" type="text" />
+                    <input value="Monthly Meeting" id="title" class="poster-input" type="text" />
                 </div>
                 <div class="input-field col s12 m6">
                     <label for="subtitle">Subtitle</label>
-                    <input value="with special guest:" id="subtitle" class="posterInput" type="text" />
+                    <input value="with special guest:" id="subtitle" class="poster-input" type="text" />
                 </div>
                 <div class="input-field col s12 m6">
                     <label for="event">Event</label>
-                    <input value="Max Winters" id="event" class="posterInput" type="text" />
+                    <input value="Max Winters" id="event" class="poster-input" type="text" />
                 </div>
                 <div class="input-field col s12 m6">
-                    <label for="eventTagline">Event Tagline</label>
-                    <input value="FIFA & Premier League Referee" id="eventTagline" class="posterInput" type="text" />
+                    <label for="event-tagline">Event Tagline</label>
+                    <input value="FIFA & Premier League Referee" id="event-tagline" class="poster-input" type="text" />
                 </div>
                 <div class="input-field col s12 m6">
                     <label for="date">Date</label>
-                    <input value="12/10/2023" id="date" class="posterInput" type="text" />
+                    <input value="12/10/2023" id="date" class="poster-input" type="text" />
                 </div>
                 <div class="input-field col s12 m6">
                     <label for="time">Time</label>
-                    <input value="7:30pm" id="time" class="posterInput" type="text" />
+                    <input value="7:30pm" id="time" class="poster-input" type="text" />
                 </div>
                 <div class="input-field col s12 m6">
                     <label for="location">Location</label>
-                    <input value="Meeting Hall" id="location" class="posterInput" type="text" />
+                    <input value="Meeting Hall" id="location" class="poster-input" type="text" />
                 </div>
                 <div class="input-field col s12 m6">
                     <label for="address">Address</label>
-                    <textarea id="address" class="materialize-textarea posterInput">
+                    <textarea id="address" class="materialize-textarea poster-input">
 1 Church Street
 HA7 1AA</textarea>
                 </div>

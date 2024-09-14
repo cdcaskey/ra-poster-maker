@@ -1,12 +1,12 @@
 /* Requires baseCanvas.js to run */
 
 function style3(width, height, context) {
-    let nameTop = $('#nameTop').val().toUpperCase();
-	let nameBottom = $('#nameBottom').val().toUpperCase();
+    let nameTop = $('#name-top').val().toUpperCase();
+	let nameBottom = $('#name-bottom').val().toUpperCase();
 	let title = $('#title').val().toUpperCase();
 	let subtitle = $('#subtitle').val();
 	let event = $('#event').val().toUpperCase();
-	let eventTagline = $('#eventTagline').val();
+	let eventTagline = $('#event-tagline').val();
 	let date = $('#date').val().toUpperCase();
 	let time = $('#time').val().toUpperCase();
 	let location = $('#location').val().toUpperCase();
