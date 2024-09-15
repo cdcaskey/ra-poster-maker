@@ -23,4 +23,4 @@ $(function () {
 
     selectedStyle = 3;
     updateStyle(selectedStyle);
-})
+});
